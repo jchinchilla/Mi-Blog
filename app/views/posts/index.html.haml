@@ -1,0 +1,13 @@
+%h1
+  My Posts
+#index_container  
+  %ul.posts_index     
+    - @posts.each do |post|
+      %li
+        = link_to post.title, post, :class=>"link_to link_to_post"
+        .meta
+          Posted
+          = post.created_at.strftime("%m.%d.%Y")
+        %span.posts_nav_links
+          = link_to 'Edit', edit_post_path(post)
+          = link_to 'Delete', post, :confirm => 'Whoa, are you sure?', :method => :delete

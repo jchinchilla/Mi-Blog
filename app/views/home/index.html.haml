@@ -1,0 +1,12 @@
+%h1
+  Welcome!
+%p
+  This is where the magic happens
+#index_container
+  %ul.posts_index
+    - @posts.each do |post|
+      %li
+        = link_to post.title, post, :class=>"link_to link_to_post"
+        .meta
+          Posted
+          = post.created_at.strftime("%m/%d/%Y")

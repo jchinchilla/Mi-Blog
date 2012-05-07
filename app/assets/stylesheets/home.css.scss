@@ -1,0 +1,164 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+	height: 100%;
+  background-color: #fff;
+  color: #333;
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 15px;
+}
+
+//.box {
+//	position: relative;
+//	float: left;
+//	width: 200px;
+//	height: 900px;
+//	background-color: #000;
+//	
+//}
+
+#container {
+	position: relative;
+	height: 100%;
+	width: 900px;
+	margin:	10px auto;
+}
+
+#column_left {
+	position: relative;
+	float: left;
+	width: 175px;
+	height: 900px;
+}
+
+#column_right	{
+	float: left;
+	width: 675px;
+	height: 900px;
+	margin-left: 15px;
+}
+
+.column_prop_graph {
+	box-shadow: 0 5px 8px 1px #222;
+	border-left: 1px solid #ececec;
+	//use sass variables to remove duplication in following lines
+  background: -webkit-linear-gradient(#ececec 2px, transparent 2px), -webkit-linear-gradient(0, #ececec 2px, transparent 2px), -webkit-linear-gradient(#ececec 1px, transparent 1px), -webkit-linear-gradient(0, #ececec 1px, transparent 1px);
+  background: -moz-linear-gradient(skyblue 2px, transparent 2px), -moz-linear-gradient(0, skyblue 2px, transparent 2px), -moz-linear-gradient(skyblue 1px, transparent 1px), -moz-linear-gradient(0, skyblue 1px, transparent 1px);
+  background: -o-linear-gradient(skyblue 2px, transparent 2px), -o-linear-gradient(0, skyblue 2px, transparent 2px), -o-linear-gradient(skyblue 1px, transparent 1px), -o-linear-gradient(0, skyblue 1px, transparent 1px);
+  background: -ms-linear-gradient(skyblue 2px, transparent 2px), -ms-linear-gradient(0, skyblue 2px, transparent 2px), -ms-linear-gradient(skyblue 1px, transparent 1px), -ms-linear-gradient(0, skyblue 1px, transparent 1px);
+	background: linear-gradient(skyblue 2px, transparent 2px), linear-gradient(0, skyblue 2px, transparent 2px), linear-gradient(skyblue 1px, transparent 1px), linear-gradient(0, skyblue 1px, transparent 1px);
+  -webkit-background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  -moz-background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.column_prop_solid {
+	box-shadow: 0 5px 8px 1px #222;
+	background-color: #222;
+}
+
+#container_content {
+	width: 660px;
+	height: 100%;
+	padding: 20px;
+}
+
+#content {
+	width: 620px;
+	height: 100%;
+	padding: 20px;
+}
+
+#index_container {
+		padding-top: 20px;
+		padding-left: 25px;
+		padding-right: 25px;
+		font-size: 18px;
+}
+
+#secondary_nav_container {
+	width: 125px;
+	height: 100%;
+	padding-top: 10px;
+	margin: auto;
+	p {
+		font-size: 13px;
+		color: #fff;
+	}
+}
+
+p {
+  color: #333;
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 14px;
+}
+
+.link_to {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+.meta {
+	font-size: 10px;
+}
+
+h2 {
+	font-size: 15px;
+}
+
+h3 {
+	font-size: 13px;
+}
+
+#logo {
+	float: left;
+	position: relative;
+}
+
+#header {
+	width: 100%;
+	height: 75px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#5B5B5B));
+}
+
+#container_nav {
+	width: 900px;
+	height: 75px;
+	margin: auto;
+}
+
+#container_nav_links {
+	position: relative;
+	float: right;
+	margin-top: 30px;
+	ul li {
+		list-style-type: none;
+		display: inline;
+		padding: 20px;
+		margin: 10px;		
+	}
+	a {
+		text-decoration: none;
+	  color: #FFFCFC;
+	  &:visited {
+	    color: #FFFCFC; }
+	  &:hover {
+	    color: #ba4f0a; }
+	}
+}
+
+
+#footer {
+	height: 70px;
+	width: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#5B5B5B));
+}
+
+
