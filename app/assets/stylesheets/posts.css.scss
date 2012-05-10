@@ -1,0 +1,113 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// post_index
+// post_title
+// post_body_container
+// post_date
+// post_links
+// post_title_new
+
+
+input[type="submit"] {
+	height: 30px;
+	width: 270px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#420501), to(#FFD9D6));  
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+textarea {
+	background-color: #e4e4e4;
+	border: 2px inset;
+	margin-top: 5px;
+}
+
+#post_title {
+	background-color: #e4e4e4;
+	width: 269px;
+	height: 20px;
+	margin-top: 5px;
+}
+
+.notice {
+	text-align: center;
+	color: #ba4f0a;
+}
+
+
+.field {
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+
+.post_title_new {
+	color: blue;
+	font-size: 20px;
+}
+
+.new_post_box {
+	background-color: #ccc;
+	width: 324px;
+	padding: 25px 0 0 25px;
+	box-shadow: 0 5px 8px 1px #222;
+}
+
+.new_post_button {
+	width: 120px;
+	height: 30px;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 12px;
+	line-height: 2.5em;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b2b2b2), to(#FFF));
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	cursor: pointer;
+	a {
+		text-decoration: none;
+	  color: #222;
+	  &:visited {
+	    color: #222; }
+	  &:hover {
+	    color: #222; }
+	}
+}
+
+.posts_index {
+	list-style-type: none;
+	color: #333;
+	font-size: 18px;
+	a {
+		text-decoration: none;
+  	color: #B22F21;
+  	&:visited {
+    color: #B22F21; }
+  	&:hover {
+    color: #222;
+ 		text-decoration: underline;}
+	}
+	li {
+		padding: 20px;
+	}
+}
+
+.posts_nav_links {
+	a {
+		font-size: 10px;
+		text-decoration: none;
+  	color: #630202;
+  	&:visited {
+    color: #630202; }
+  	&:hover {
+    color: #222;
+ 		text-decoration: none;}
+	}
+}

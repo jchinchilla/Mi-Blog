@@ -1,0 +1,40 @@
+!!! 5
+%html{:xmlns=>"http://www.w3.org/1999/xhtml", 'xmlns:og'=>"http://ogp.me/ns#", 'xmlns:fb'=>"http://www.facebook.com/2008/fbml", :class=>"flexbox boxshadow csstransitions"}
+  %head
+    %title
+      Jon's Magic playground
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #header
+      #container_nav
+        #logo
+          = image_tag ('jc_front.png'), :href => "#"
+        #container_nav_links
+          %ul
+            %li
+              = link_to "Home", home_index_path
+            %li
+              = link_to "About", about_index_path
+            %li
+              = link_to "Posts", posts_path
+    #container
+      #column_left.column_prop_solid
+        #secondary_nav_container
+          .new_post_button
+            = link_to 'Start a New Post', new_post_path
+          %p
+            Hello World, this is me.
+      #column_right.column_prop_graph
+        #container_content
+          #content
+            .notice
+              = notice
+            .alert  
+              = alert
+            = yield
+    / #footer
+      
+
+

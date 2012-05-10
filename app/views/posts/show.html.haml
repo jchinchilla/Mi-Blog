@@ -1,0 +1,8 @@
+%h1
+  = @post.title
+  #index_container
+    %p
+      = @post.body
+    .posts_nav_links
+      = link_to 'Edit', edit_post_path(@post)
+      = link_to 'Back', posts_path
