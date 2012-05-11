@@ -12,16 +12,26 @@
 
 input[type="submit"] {
 	height: 30px;
-	width: 270px;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#420501), to(#FFD9D6));  
+	width: 298px;
+	font-size: 15px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#91DDFF), to(#558599));
+	background-color: transparent;
 	cursor: pointer;
-	border-top-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+	$bsc: 7px;
+	border-top-left-radius: $bsc;
+	border-bottom-right-radius: $bsc;
+	border-top-right-radius: $bsc;
+	border-bottom-left-radius: $bsc;
+	border: 1px #91DDFF;
 }
 
-textarea {
+//textarea {
+//	background-color: #e4e4e4;
+//	border: 2px inset;
+//	margin-top: 5px;
+//}
+
+#post_body {
 	background-color: #e4e4e4;
 	border: 2px inset;
 	margin-top: 5px;
@@ -29,7 +39,7 @@ textarea {
 
 #post_title {
 	background-color: #e4e4e4;
-	width: 269px;
+	width: 295px;
 	height: 20px;
 	margin-top: 5px;
 }
@@ -43,6 +53,7 @@ textarea {
 .field {
 	font-size: 14px;
 	padding-bottom: 10px;
+	color: #5F91A7;
 }
 
 
@@ -52,9 +63,15 @@ textarea {
 }
 
 .new_post_box {
-	background-color: #ccc;
+	background-color: #222;
 	width: 324px;
+	height: 410px;
+	$bsc: 15px;
 	padding: 25px 0 0 25px;
+	border-top-left-radius: $bsc;
+	border-bottom-right-radius: $bsc;
+	border-top-right-radius: $bsc;
+	border-bottom-left-radius: $bsc;
 	box-shadow: 0 5px 8px 1px #222;
 }
 
@@ -65,11 +82,12 @@ textarea {
 	text-align: center;
 	font-size: 12px;
 	line-height: 2.5em;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#b2b2b2), to(#FFF));
-	border-top-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#b2b2b2));
+	$bsc: 5px;
+	border-top-left-radius: $bsc;
+	border-bottom-right-radius: $bsc;
+	border-top-right-radius: $bsc;
+	border-bottom-left-radius: $bsc;
 	cursor: pointer;
 	a {
 		text-decoration: none;

@@ -11,15 +11,6 @@ body {
   font-size: 15px;
 }
 
-//.box {
-//	position: relative;
-//	float: left;
-//	width: 200px;
-//	height: 900px;
-//	background-color: #000;
-//	
-//}
-
 #container {
 	position: relative;
 	height: 100%;
@@ -139,7 +130,7 @@ h3 {
 	float: right;
 	margin-top: 28px;
 	ul :hover {
-		background-color: #222;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#5C5C5C), to(#898989));
 		border: 1px solid #222;
 	};
 	ul li {
@@ -155,11 +146,10 @@ h3 {
 	  color: #fff;
 	  &:visited {
 	    color: #fff; }
-//	  &:hover {
-//	    color: #fff; }
+	  &:hover {
+	    color: #fff; }
 	}
 }
-
 
 #footer {
 	height: 70px;
