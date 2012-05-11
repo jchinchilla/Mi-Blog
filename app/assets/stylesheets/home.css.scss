@@ -36,7 +36,8 @@ body {
 	box-shadow: 0 5px 8px 1px #222;
 	border-left: 1px solid #ececec;
 	//use sass variables to remove duplication in following lines
-  background: -webkit-linear-gradient(#ececec 2px, transparent 2px), -webkit-linear-gradient(0, #ececec 2px, transparent 2px), -webkit-linear-gradient(#ececec 1px, transparent 1px), -webkit-linear-gradient(0, #ececec 1px, transparent 1px);
+  $bsc: #ececec;
+	background: -webkit-linear-gradient($bsc 2px, transparent 2px), -webkit-linear-gradient(0, $bsc 2px, transparent 2px), -webkit-linear-gradient($bsc 1px, transparent 1px), -webkit-linear-gradient(0, $bsc 1px, transparent 1px);
   background: -moz-linear-gradient(skyblue 2px, transparent 2px), -moz-linear-gradient(0, skyblue 2px, transparent 2px), -moz-linear-gradient(skyblue 1px, transparent 1px), -moz-linear-gradient(0, skyblue 1px, transparent 1px);
   background: -o-linear-gradient(skyblue 2px, transparent 2px), -o-linear-gradient(0, skyblue 2px, transparent 2px), -o-linear-gradient(skyblue 1px, transparent 1px), -o-linear-gradient(0, skyblue 1px, transparent 1px);
   background: -ms-linear-gradient(skyblue 2px, transparent 2px), -ms-linear-gradient(0, skyblue 2px, transparent 2px), -ms-linear-gradient(skyblue 1px, transparent 1px), -ms-linear-gradient(0, skyblue 1px, transparent 1px);
@@ -111,6 +112,7 @@ h3 {
 #logo {
 	float: left;
 	position: relative;
+	height: 75px;
 }
 
 #header {
@@ -130,16 +132,13 @@ h3 {
 	float: right;
 	margin-top: 28px;
 	ul :hover {
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#5C5C5C), to(#898989));
-		border: 1px solid #222;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#898989));		
 	};
 	ul li {
 		list-style-type: none;
 		display: inline;
 		padding: 28px 20px;
 		margin-top: 10px;
-//		background-color: none;
-//		border: 1px solid #fff;
 	}
 	a {
 		text-decoration: none;
@@ -150,6 +149,7 @@ h3 {
 	    color: #fff; }
 	}
 }
+
 
 #footer {
 	height: 70px;

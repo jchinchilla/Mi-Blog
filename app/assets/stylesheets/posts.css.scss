@@ -18,7 +18,7 @@ input[type="submit"] {
 	background-color: transparent;
 	cursor: pointer;
 	$bsc: 7px;
-	border-top-left-radius: $bsc;
+		border-top-left-radius: $bsc;
 	border-bottom-right-radius: $bsc;
 	border-top-right-radius: $bsc;
 	border-bottom-left-radius: $bsc;
@@ -47,6 +47,8 @@ input[type="submit"] {
 .notice {
 	text-align: center;
 	color: #ba4f0a;
+	width: 675px;
+	background-color: #ccc;
 }
 
 
@@ -118,14 +120,13 @@ input[type="submit"] {
 }
 
 .posts_nav_links {
+	font-size: 15px;
 	a {
-		font-size: 10px;
 		text-decoration: none;
-  	color: #630202;
+  	color: #222;
   	&:visited {
-    color: #630202; }
+    color: #222; }
   	&:hover {
-    color: #222;
- 		text-decoration: none;}
+    color: #ccc; }
 	}
 }
